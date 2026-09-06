@@ -1,0 +1,13 @@
+SELLQUITY COMING-SOON LANDING PAGE
+
+This folder is already the deploy output. No npm install or build step is required.
+
+Cloudflare Pages:
+1. Create a new Pages project for the landing page.
+2. Deploy this folder (or put these files in a small standalone repo).
+3. Build command: leave blank.
+4. Build output directory: /
+5. Attach sellquity.com as the custom domain.
+
+The page intentionally does NOT collect email addresses yet.
+The Early Access control is a disabled preview CTA until a waitlist endpoint is chosen.
