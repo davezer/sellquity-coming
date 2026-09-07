@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050b14" />
+
+  <title>Privacy Policy — Sellquity</title>
+  <meta
+    name="description"
+    content="Sellquity Privacy Policy: how Sellquity collects, uses, protects, retains and deletes information."
+  />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Privacy Policy — Sellquity" />
+  <meta property="og:description" content="How Sellquity collects, uses, protects, retains and deletes information." />
+  <meta property="og:url" content="https://sellquity.com/privacy" />
+
+  <link rel="canonical" href="https://sellquity.com/privacy" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  <style>
+    .privacy-header { grid-template-columns: 1fr auto; }
+    .privacy-header .back-home {
+      justify-self: end;
+      color: #7890a5;
+      font-size: .72rem;
+      font-weight: 780;
+      transition: color .15s ease;
+    }
+    .privacy-header .back-home:hover { color: #e8f8ff; }
+
+    .privacy-main {
+      width: min(940px, calc(100% - 42px));
+      margin: 0 auto;
+      padding: 84px 0 110px;
+    }
+
+    .privacy-hero {
+      padding-bottom: 42px;
+      border-bottom: 1px solid var(--border);
+    }
+    .privacy-hero .eyebrow {
+      margin-bottom: 18px;
+      color: var(--teal);
+    }
+    .privacy-hero h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(3.4rem, 8vw, 6.6rem);
+      line-height: .92;
+      letter-spacing: -.065em;
+    }
+    .privacy-hero h1 em {
+      color: transparent;
+      background: var(--grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-style: normal;
+    }
+    .privacy-hero p {
+      max-width: 700px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .policy-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+    .policy-meta span {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 7px 10px;
+      color: #88a2b8;
+      background: #08131f;
+      font: 800 .61rem ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .privacy-layout {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 58px;
+      align-items: start;
+      padding-top: 42px;
+    }
+
+    .privacy-nav {
+      position: sticky;
+      top: 104px;
+      display: grid;
+      gap: 4px;
+    }
+    .privacy-nav > span {
+      margin-bottom: 8px;
+      color: var(--teal);
+      font: 850 .59rem ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .privacy-nav a {
+      border-left: 1px solid #1a334a;
+      padding: 7px 0 7px 12px;
+      color: #667f95;
+      font-size: .72rem;
+      font-weight: 720;
+      transition: color .15s ease, border-color .15s ease;
+    }
+    .privacy-nav a:hover {
+      border-color: var(--cyan);
+      color: #e4f7ff;
+    }
+
+    .policy { min-width: 0; }
+    .policy section {
+      scroll-margin-top: 110px;
+      padding: 0 0 38px;
+    }
+    .policy section + section {
+      border-top: 1px solid #142a3d;
+      padding-top: 38px;
+    }
+    .policy .section-label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--teal);
+      font: 850 .61rem ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    .policy h2 {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-size: 1.65rem;
+      letter-spacing: -.035em;
+    }
+    .policy h3 {
+      margin: 24px 0 8px;
+      color: #dcecff;
+      font-size: .94rem;
+    }
+    .policy p,
+    .policy li {
+      color: var(--muted);
+      font-size: .91rem;
+      line-height: 1.75;
+    }
+    .policy p { margin: 0 0 13px; }
+    .policy strong { color: #e8f6ff; }
+    .policy ul {
+      display: grid;
+      gap: 7px;
+      margin: 12px 0 16px;
+      padding-left: 21px;
+    }
+    .policy a {
+      color: #65dbe7;
+      text-decoration: underline;
+      text-decoration-color: #1e6470;
+      text-underline-offset: 3px;
+    }
+    .policy a:hover { color: #8af2e5; }
+
+    .privacy-callout {
+      margin: 18px 0;
+      border: 1px solid #165564;
+      border-radius: 12px;
+      padding: 16px 18px;
+      background: linear-gradient(135deg, #0069e309, #01d4a508), #081923;
+    }
+    .privacy-callout strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #7de9db;
+      font-size: .78rem;
+    }
+    .privacy-callout p {
+      margin: 0;
+      color: #7f9baa;
+      font-size: .82rem;
+    }
+
+    .privacy-footer {
+      width: min(940px, calc(100% - 42px));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 0 auto;
+      border-top: 1px solid var(--border);
+      padding: 26px 0 42px;
+      color: #60778b;
+      font-size: .68rem;
+    }
+    .privacy-footer a { color: #88a7b9; }
+    .privacy-footer a:hover { color: var(--cyan); }
+
+    @media (max-width: 760px) {
+      .site-header.privacy-header { width: min(100% - 28px, var(--max)); }
+      .privacy-main {
+        width: min(100% - 28px, 940px);
+        padding-top: 58px;
+      }
+      .privacy-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .privacy-nav {
+        position: static;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 10px;
+        background: #07121e;
+      }
+      .privacy-nav > span { grid-column: 1 / -1; }
+      .privacy-nav a {
+        border-left: 0;
+        padding: 6px;
+      }
+      .privacy-footer {
+        width: min(100% - 28px, 940px);
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .privacy-header .brand span { display: none; }
+      .privacy-hero h1 { font-size: 3rem; }
+      .privacy-nav { grid-template-columns: 1fr; }
+      .privacy-nav > span { grid-column: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header privacy-header">
+    <a class="brand" href="/" aria-label="Sellquity home">
+      <img src="/assets/sellquity-mark.webp" alt="" />
+      <span>SELLQUITY</span>
+    </a>
+
+    <a class="back-home" href="/">← Back to Sellquity</a>
+  </header>
+
+  <main class="privacy-main">
+    <section class="privacy-hero">
+      <span class="eyebrow">LEGAL · PRIVACY</span>
+      <h1>Your business data.<br /><em>Handled carefully.</em></h1>
+      <p>
+        This Privacy Policy explains what information Sellquity collects,
+        why we use it, how we protect it, and the choices available to you.
+      </p>
+
+      <div class="policy-meta">
+        <span>Effective September 7, 2026</span>
+        <span>Sellquity</span>
+        <span>United States</span>
+      </div>
+    </section>
+
+    <div class="privacy-layout">
+      <nav class="privacy-nav" aria-label="Privacy policy sections">
+        <span>On this page</span>
+        <a href="#overview">Overview</a>
+        <a href="#information">Information we collect</a>
+        <a href="#ebay">eBay data</a>
+        <a href="#use">How we use information</a>
+        <a href="#sharing">Sharing</a>
+        <a href="#security">Security</a>
+        <a href="#retention">Retention & deletion</a>
+        <a href="#cookies">Cookies</a>
+        <a href="#choices">Your choices</a>
+        <a href="#children">Children</a>
+        <a href="#changes">Changes</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <article class="policy">
+        <section id="overview">
+          <span class="section-label">01 · Overview</span>
+          <h2>What Sellquity is</h2>
+          <p>
+            Sellquity is reseller operations software designed to help users
+            manage inventory, purchase costs, listings, marketplace activity,
+            fees, payouts, expenses, and profit information.
+          </p>
+          <p>
+            This policy applies to the Sellquity website, Sellquity application,
+            and related services operated under the Sellquity name.
+          </p>
+
+          <div class="privacy-callout">
+            <strong>We do not sell your personal information.</strong>
+            <p>
+              Sellquity does not sell or rent your personal information or
+              marketplace account data to advertisers or data brokers.
+            </p>
+          </div>
+        </section>
+
+        <section id="information">
+          <span class="section-label">02 · Information we collect</span>
+          <h2>Information you provide to Sellquity</h2>
+
+          <h3>Account information</h3>
+          <p>
+            When you create or use a Sellquity account, we may collect information
+            such as your name, email address, authentication information, account
+            preferences, and workspace settings.
+          </p>
+
+          <h3>Reseller business information</h3>
+          <p>
+            Information you enter, upload, import, or create in Sellquity may
+            include inventory records, SKUs, purchase prices, purchase sources,
+            storage locations, listing information, sales, marketplace fees,
+            shipping costs, payouts, expenses, notes, and related accounting data.
+          </p>
+
+          <h3>Technical information</h3>
+          <p>
+            We may process limited technical information needed to operate and
+            secure the service, such as IP address, browser or device information,
+            session information, request logs, timestamps, and error information.
+          </p>
+        </section>
+
+        <section id="ebay">
+          <span class="section-label">03 · Marketplace connections</span>
+          <h2>Information received from eBay</h2>
+          <p>
+            If you connect an eBay account, Sellquity uses eBay's authorization
+            system to access information that you authorize eBay to share with
+            Sellquity. Depending on the features you use and permissions granted,
+            this may include:
+          </p>
+
+          <ul>
+            <li>eBay seller account identifiers and basic account information;</li>
+            <li>inventory, offers, listings, listing status, price, and quantity data;</li>
+            <li>orders, line items, fulfillment status, and sales information;</li>
+            <li>fees, payouts, transaction records, shipping-label charges, and other financial activity; and</li>
+            <li>other marketplace information necessary to provide features you request.</li>
+          </ul>
+
+          <p>
+            Sellquity uses this information to provide reseller inventory,
+            reconciliation, accounting, reporting, and automation features.
+            Sellquity does not use your eBay data for advertising.
+          </p>
+
+          <p>
+            eBay access is authorized through OAuth. Sellquity stores authorization
+            credentials server-side so the application can maintain an authorized
+            connection without requiring you to sign in to eBay for every request.
+            You may disconnect eBay from Sellquity at any time.
+          </p>
+        </section>
+
+        <section id="use">
+          <span class="section-label">04 · Use of information</span>
+          <h2>Why we process information</h2>
+          <p>We use information collected through Sellquity to:</p>
+          <ul>
+            <li>provide and operate the Sellquity service;</li>
+            <li>authenticate users and protect accounts;</li>
+            <li>organize and reconcile inventory, listings, sales, expenses, fees, payouts, and COGS;</li>
+            <li>connect authorized marketplace accounts and synchronize requested marketplace data;</li>
+            <li>produce reports, analytics, alerts, and reseller workflow recommendations;</li>
+            <li>maintain, troubleshoot, secure, and improve the service;</li>
+            <li>communicate about account, security, service, or support matters; and</li>
+            <li>comply with legal, regulatory, marketplace, and platform obligations.</li>
+          </ul>
+        </section>
+
+        <section id="sharing">
+          <span class="section-label">05 · Sharing</span>
+          <h2>When information may be shared</h2>
+          <p>
+            We do not sell personal information. Information may be disclosed only
+            when reasonably necessary to operate Sellquity, including:
+          </p>
+          <ul>
+            <li><strong>Service providers.</strong> Infrastructure, hosting, security, email, and other vendors may process limited information on our behalf as necessary to provide their services.</li>
+            <li><strong>Connected marketplaces.</strong> When you direct Sellquity to perform an authorized marketplace action, information necessary for that action may be exchanged with that marketplace.</li>
+            <li><strong>Legal and safety reasons.</strong> We may disclose information where required by law or where reasonably necessary to protect users, the service, or the rights and safety of others.</li>
+            <li><strong>Business transfers.</strong> Information may be transferred as part of a merger, acquisition, financing, restructuring, or sale of all or part of the business, subject to applicable law.</li>
+          </ul>
+        </section>
+
+        <section id="security">
+          <span class="section-label">06 · Security</span>
+          <h2>How we protect information</h2>
+          <p>
+            Sellquity uses technical and organizational safeguards intended to
+            protect information against unauthorized access, disclosure,
+            alteration, or loss.
+          </p>
+          <p>
+            Marketplace authorization tokens are stored server-side and encrypted
+            before database storage. Sellquity also uses authenticated sessions,
+            access controls, secure HTTPS connections, and other security controls
+            appropriate to the service.
+          </p>
+          <p>
+            No method of electronic storage or transmission can be guaranteed to
+            be completely secure, but we work to reduce risk and limit access to
+            information to what is necessary.
+          </p>
+        </section>
+
+        <section id="retention">
+          <span class="section-label">07 · Retention & deletion</span>
+          <h2>How long information is kept</h2>
+          <p>
+            We retain information for as long as reasonably necessary to provide
+            Sellquity, maintain your account and business records, comply with
+            legal or marketplace obligations, resolve disputes, prevent fraud,
+            and enforce agreements.
+          </p>
+          <p>
+            When information is no longer reasonably needed, it may be deleted,
+            anonymized, or retained only where required or permitted by law.
+          </p>
+
+          <h3>Marketplace account deletion requests</h3>
+          <p>
+            Sellquity maintains a public endpoint for marketplace account-deletion
+            notifications. If a connected marketplace notifies Sellquity that a
+            marketplace user has requested deletion of personal data, Sellquity
+            will process applicable information in accordance with marketplace
+            requirements and applicable law.
+          </p>
+
+          <h3>Sellquity account deletion</h3>
+          <p>
+            You may request deletion of your Sellquity account and associated
+            personal information by contacting us at
+            <a href="mailto:dave@sellquity.com">dave@sellquity.com</a>.
+            Certain business, accounting, security, or compliance records may be
+            retained where legally required or reasonably necessary.
+          </p>
+        </section>
+
+        <section id="cookies">
+          <span class="section-label">08 · Cookies & sessions</span>
+          <h2>Keeping you signed in</h2>
+          <p>
+            Sellquity may use cookies or similar browser storage that are necessary
+            for authentication, account security, session management, workspace
+            selection, preferences, and core service functionality.
+          </p>
+          <p>
+            Sellquity does not use marketplace data to build advertising profiles.
+          </p>
+        </section>
+
+        <section id="choices">
+          <span class="section-label">09 · Your choices</span>
+          <h2>Control over your information</h2>
+          <p>
+            Depending on the service features available to you, you may review or
+            update account information, edit business records, disconnect a
+            marketplace integration, request an export, or request account
+            deletion.
+          </p>
+          <p>
+            You can also revoke Sellquity's access to a connected marketplace
+            through that marketplace's account or authorization settings.
+          </p>
+        </section>
+
+        <section id="children">
+          <span class="section-label">10 · Children</span>
+          <h2>Sellquity is not directed to children</h2>
+          <p>
+            Sellquity is a business and reseller operations service and is not
+            directed to children under 13. We do not knowingly collect personal
+            information from children under 13.
+          </p>
+        </section>
+
+        <section id="changes">
+          <span class="section-label">11 · Policy changes</span>
+          <h2>Updates to this policy</h2>
+          <p>
+            We may update this Privacy Policy as Sellquity evolves. When we make
+            material changes, we will update the effective date above and may
+            provide additional notice where appropriate.
+          </p>
+        </section>
+
+        <section id="contact">
+          <span class="section-label">12 · Contact</span>
+          <h2>Questions or privacy requests</h2>
+          <p>
+            For privacy questions, account deletion requests, or other requests
+            relating to your information, contact:
+          </p>
+          <p>
+            <strong>Sellquity</strong><br />
+            Email: <a href="mailto:dave@sellquity.com">dave@sellquity.com</a><br />
+            Website: <a href="https://sellquity.com/">sellquity.com</a>
+          </p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="privacy-footer">
+    <span>© 2026 Sellquity. All rights reserved.</span>
+    <span>
+      <a href="/">Sellquity home</a>
+      &nbsp;·&nbsp;
+      <a href="/privacy">Privacy</a>
+    </span>
+  </footer>
+</body>
+</html>
